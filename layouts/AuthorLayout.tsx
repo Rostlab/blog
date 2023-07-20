@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, content }: Props) {
               alt="avatar"
               width={192}
               height={192}
-              className="h-48 w-48 rounded-full"
+              className="h-2/4 w-2/4 rounded-full"
             />
           )}
           <div className="flex-grow sm:pl-8">
@@ -29,7 +29,9 @@ export default function AuthorLayout({ children, content }: Props) {
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
 
-            <div className="prose max-w-none pb-8 pt-8 dark:prose-dark">{children}</div>
+            <div className="prose max-w-none pb-8 pt-8 text-justify dark:prose-dark">
+              {children}
+            </div>
             <div className="inline-flex space-x-3 pt-6">
               <SocialIcon kind="website" href={website} />
               <SocialIcon kind="github" href={github} />
