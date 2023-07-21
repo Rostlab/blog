@@ -8,9 +8,9 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blog.rostlab.org',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteRepo: 'https://github.com/Rostlab/blog',
   siteLogo: '/static/images/logo.svg',
-  image: '/static/images/avatar.png',
+  image: '/static/images/logo.svg',
   socialBanner: '/static/images/twitter-card.png',
   github: 'https://github.com/Rostlab',
   twitter: 'https://twitter.com/rostlab',

@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, content }: Props) {
               alt="avatar"
               width={192}
               height={192}
-              className="h-fit w-2/4 rounded-full xl:w-48"
+              className="h-auto w-2/4 rounded-full xl:w-48"
             />
           )}
           <div className="flex-grow sm:pl-8">
