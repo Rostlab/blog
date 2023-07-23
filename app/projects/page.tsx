@@ -27,15 +27,16 @@ export default function Projects() {
               </>
             )}
 
-            {projectsData.map((d) => (
-              <Card
-                key={d.title}
-                title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-              />
-            ))}
+            {projectsData.length > 0 &&
+              projectsData.map((d) => (
+                <Card
+                  key={d.title}
+                  title={d.title}
+                  description={d.description}
+                  imgSrc={d.imgSrc}
+                  href={d.href}
+                />
+              ))}
           </div>
         </div>
       </div>
