@@ -8,6 +8,7 @@ const components = {
   linkedin: Linkedin,
   twitter: Twitter,
   web: Web,
+  mail: Mail,
   mastodon: Mastodon,
 }
 
