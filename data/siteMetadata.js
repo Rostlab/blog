@@ -4,7 +4,7 @@ const siteMetadata = {
   author: 'RostLab',
   headerTitle: 'RostLab Blog',
   description:
-    'A blog  to share groundbreaking scientific discoveries, fascinating insights, and intriguing tidbits, aimed at fostering a deeper understanding and appreciation of the ever-evolving world of bioinformatics.',
+    'A blog to share more or less groundbreaking scientific discoveries, fascinating insights, and intriguing tidbits, aimed at fostering a deeper understanding and appreciation of the ever-evolving world of bioinformatics.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blog.rostlab.org',

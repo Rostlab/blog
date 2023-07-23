@@ -13,11 +13,20 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Showcase your projects with a hero image (16 x 9)
+            Currently ongoing projects at RostLab
           </p>
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
+            {projectsData.length === 0 && (
+              <>
+                Under Construction{'   '}
+                <span role="img" aria-label="roadwork sign">
+                  🚧
+                </span>
+              </>
+            )}
+
             {projectsData.map((d) => (
               <Card
                 key={d.title}
