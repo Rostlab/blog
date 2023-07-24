@@ -7,6 +7,24 @@ export default function Footer() {
     <footer>
       <div className="mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
+          <a
+            href="https://www.cs.cit.tum.de/en/bio/impressum/"
+            className="text-gray-500 hover:text-gray-900 default-transition default-scale"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Impressum
+          </a>
+          <a
+            href="https://www.cs.cit.tum.de/en/bio/datenschutz/"
+            className="text-gray-500 hover:text-gray-900 default-transition default-scale"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy
+          </a>
+        </div>
+        <div className="mb-3 flex space-x-4">
           <SocialIcon kind="web" href={siteMetadata.web} size={6} />
           <SocialIcon kind="github" href={siteMetadata.github} size={6} />
           <SocialIcon kind="facebook" href={siteMetadata.facebook} size={6} />
