@@ -129,9 +129,20 @@ export const Authors = defineDocumentType(() => ({
   computedFields,
 }))
 
+export const Page = defineDocumentType(() => ({
+  name: 'Page',
+  filePathPattern: 'pages/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    layout: { type: 'string' },
+  },
+  computedFields,
+}))
+
 export default makeSource({
   contentDirPath: 'data',
-  documentTypes: [Blog, Authors],
+  documentTypes: [Blog, Authors, Page],
   mdx: {
     cwd: process.cwd(),
     remarkPlugins: [
