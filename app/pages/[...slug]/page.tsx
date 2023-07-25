@@ -15,6 +15,8 @@ export async function generateMetadata({
 }): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug.join('/'))
   const page = allPages.find((p) => p.slug === slug)
+  if (!page) return
+
   return genPageMetadata({ title: page.title })
 }
 
@@ -29,13 +31,9 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 
   if (!page) notFound()
   const mainContent = coreContent(page)
-  const jsonLd = page.structuredData
 
   return (
     <>
-      <script type="application/ld+json" suppressHydrationWarning>
-        {JSON.stringify(jsonLd)}
-      </script>
       <PageLayout content={mainContent}>
         <MDXLayoutRenderer code={page.body.code} components={components} toc={page.toc} />
       </PageLayout>

@@ -15,7 +15,7 @@ interface LayoutProps {
 }
 
 export default function PageLayout({ content, children }: LayoutProps) {
-  const { path, slug, date, title } = content
+  const { path, slug, title } = content
 
   return (
     <SectionContainer>
